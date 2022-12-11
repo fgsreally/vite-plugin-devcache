@@ -1,0 +1,26 @@
+{
+  "name": "vite-plugin-devcache",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main":"dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files":["dist"],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build":"tsup"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "micromatch": "^4.0.5",
+    "vite": "^3.2.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.33.1",
+    "@types/micromatch": "^4.0.2",
+    "eslint": "^8.29.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.6.4"
+  }
+}
