@@ -2,7 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.33.1
+  '@types/fs-extra': ^9.0.13
   '@types/micromatch': ^4.0.2
+  '@types/node': ^18.11.13
   eslint: ^8.29.0
   fs-extra: ^11.1.0
   micromatch: ^4.0.5
@@ -13,11 +15,13 @@ specifiers:
 dependencies:
   fs-extra: registry.npmmirror.com/fs-extra/11.1.0
   micromatch: registry.npmmirror.com/micromatch/4.0.5
-  vite: registry.npmmirror.com/vite/3.2.5
+  vite: registry.npmmirror.com/vite/3.2.5_@types+node@18.11.13
 
 devDependencies:
   '@antfu/eslint-config': registry.npmmirror.com/@antfu/eslint-config/0.33.1_ha6vam6werchizxrnqvarmz2zu
+  '@types/fs-extra': registry.npmmirror.com/@types/fs-extra/9.0.13
   '@types/micromatch': registry.npmmirror.com/@types/micromatch/4.0.2
+  '@types/node': registry.npmmirror.com/@types/node/18.11.13
   eslint: registry.npmmirror.com/eslint/8.29.0
   tsup: registry.npmmirror.com/tsup/6.5.0_typescript@4.9.4
   typescript: registry.npmmirror.com/typescript/4.9.4
@@ -263,6 +267,14 @@ packages:
     version: 3.0.1
     dev: true
 
+  registry.npmmirror.com/@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/fs-extra/-/fs-extra-9.0.13.tgz}
+    name: '@types/fs-extra'
+    version: 9.0.13
+    dependencies:
+      '@types/node': registry.npmmirror.com/@types/node/18.11.13
+    dev: true
+
   registry.npmmirror.com/@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz}
     name: '@types/json-schema'
@@ -290,6 +302,11 @@ packages:
     dependencies:
       '@types/braces': registry.npmmirror.com/@types/braces/3.0.1
     dev: true
+
+  registry.npmmirror.com/@types/node/18.11.13:
+    resolution: {integrity: sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.11.13.tgz}
+    name: '@types/node'
+    version: 18.11.13
 
   registry.npmmirror.com/@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz}
@@ -3390,8 +3407,9 @@ packages:
       spdx-expression-parse: registry.npmmirror.com/spdx-expression-parse/3.0.1
     dev: true
 
-  registry.npmmirror.com/vite/3.2.5:
+  registry.npmmirror.com/vite/3.2.5_@types+node@18.11.13:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-3.2.5.tgz}
+    id: registry.npmmirror.com/vite/3.2.5
     name: vite
     version: 3.2.5
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -3417,6 +3435,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': registry.npmmirror.com/@types/node/18.11.13
       esbuild: registry.npmmirror.com/esbuild/0.15.18
       postcss: registry.npmmirror.com/postcss/8.4.19
       resolve: registry.npmmirror.com/resolve/1.22.1

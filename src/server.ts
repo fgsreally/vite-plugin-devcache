@@ -13,7 +13,7 @@ export function server(matchPath: string): PluginOption {
     name: 'server-persist-cache',
     configureServer(_server) {
       server = _server
-      server.middlewares.use(async (req, res, next) => {
+      server.middlewares.use(async (req:any, res, next) => {
         if (req.url !== '/') {
           try {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
